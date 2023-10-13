@@ -114,10 +114,10 @@ app.get("/data", (req, res) => {
       address: "333 Poppy Street, Kanpur, India",
     },
   ];
-
-  setTimeout(() => {
-    res.send(data);
-  }, 1500);
+  res.send(data);
+  // setTimeout(() => {
+  //   res.send(data);
+  // }, 1500);
 });
 
 app.listen(port, () => {
